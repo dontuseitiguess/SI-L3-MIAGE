@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sommaire + Menu déroulant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Barre de navigation avec menu déroulant -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">MonSite</a>
+
+      <ul class="nav-list">
+        <li><a href="#sommaire">Sommaire</a></li>
+
+        <!-- Lien avec menu déroulant -->
+        <li class="dropdown" aria-haspopup="true">
+          <a href="#" class="dropdown-toggle" aria-expanded="false">Ressources ▾</a>
+          <ul class="dropdown-menu" aria-label="Sous-menu Ressources">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#chapitre-1">Chapitre 1</a></li>
+            <li><a href="#chapitre-2">Chapitre 2</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main class="container">
+    <section id="sommaire" class="card">
+      <h1>Sommaire</h1>
+      <p>Cette page présente un sommaire et un lien avec menu déroulant dans la barre de navigation.</p>
+
+      <ol class="toc">
+        <li><a id="intro" href="#intro-section">Introduction</a></li>
+        <li><a id="chapitre-1" href="#chapitre-1-section">Chapitre 1 – Bases</a></li>
+        <li><a id="chapitre-2" href="#chapitre-2-section">Chapitre 2 – Approfondissement</a></li>
+        <li><a id="contact" href="#contact-section">Contact</a></li>
+      </ol>
+    </section>
+
+    <section id="intro-section" class="card">
+      <h2>Introduction</h2>
+      <p>Exemple de section reliée depuis le sommaire et le menu déroulant.</p>
+    </section>
+
+    <section id="chapitre-1-section" class="card">
+      <h2>Chapitre 1 – Bases</h2>
+      <p>Contenu de démonstration…</p>
+    </section>
+
+    <section id="chapitre-2-section" class="card">
+      <h2>Chapitre 2 – Approfondissement</h2>
+      <p>Contenu de démonstration…</p>
+    </section>
+
+    <section id="contact-section" class="card">
+      <h2>Contact</h2>
+      <p>contact@example.com</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 — Exemple sommaire + menu déroulant</small>
+  </footer>
+
+</body>
+</html>
