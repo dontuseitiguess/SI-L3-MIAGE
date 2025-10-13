@@ -54,7 +54,7 @@
   text-align: center;
 }
 
-/* --- Cartes de schémas (Rubrique 3) --- */
+/* --- Cartes de schémas (Rubrique 3 et 8) --- */
 .schema-card {
   background-color: #f9fafb;
   border-radius: 12px;
@@ -80,6 +80,17 @@
 .schema-image:hover {
   transform: scale(1.02);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* --- Lien PDF --- */
+.pdf-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
 }
 
 /* --- Pied de page --- */
