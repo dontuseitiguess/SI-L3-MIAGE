@@ -6,64 +6,6 @@ body {
   color: #111;
 }
 
-/* ==== HERO / BANNIÈRE ==== */
-.hero {
-  background: linear-gradient(135deg, #b7d8ff, #f7b8d9);
-  padding: 120px 20px;
-  text-align: center;
-  color: #1d2530;
-  position: relative;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0.04;
-  background-size: 450px;
-  background-repeat: no-repeat;
-  background-position: 85% 35%;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero-title {
-  font-size: 3.2rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  max-width: 750px;
-  margin: 0 auto 25px;
-  line-height: 1.6;
-  color: #303644;
-}
-
-.hero-btn {
-  display: inline-block;
-  padding: 12px 26px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 12px;
-  background: white;
-  color: #1d2530;
-  box-shadow: 0 8px 18px rgba(255, 135, 180, 0.25);
-  transition: 0.3s ease;
-}
-
-.hero-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(120, 167, 255, 0.4);
-}
-
 /* ==== NAVBAR GIRLY GLASSMORPHISM ==== */
 .navbar {
   background: rgba(255, 255, 255, 0.35);
@@ -155,47 +97,47 @@ body {
   }
 }
 
-/* ==== CARTES SCHEMAS ==== */
-.schema-card {
-  background: white;
+/* ==== SOUS-CATEGORIES (EX: TD1) ==== */
+.sub-category {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.55);
+  padding: 30px;
   border-radius: 20px;
-  padding: 25px;
-  margin-bottom: 35px;
-  box-shadow: 0 8px 25px rgba(120, 167, 255, 0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 150, 200, 0.2);
 }
 
-.schema-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(255, 135, 180, 0.3);
-}
-
-.schema-card h3 {
-  color: #2c3548;
+.sub-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: 600;
+  margin-bottom: 20px;
+  color: #1d2530;
+  text-align: center;
 }
 
-.schema-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  border: 1px solid #e5e7eb;
+/* ==== LISTE DE DOCUMENTS ==== */
+.doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.doc-item {
+  display: block;
+  padding: 14px 18px;
+  background: white;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #1d2530;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(120, 167, 255, 0.15);
   transition: 0.3s ease;
 }
 
-.schema-image:hover {
-  transform: scale(1.03);
-}
-
-/* ==== LIENS PDF ==== */
-.pdf-link {
-  color: #ff4fa3;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.pdf-link:hover {
-  text-decoration: underline;
+.doc-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(255, 135, 180, 0.3);
 }
 
 /* ==== FOOTER ==== */
@@ -207,9 +149,5 @@ body {
   font-size: 0.9em;
   margin-top: 80px;
   backdrop-filter: blur(6px);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> a6bc11329ee874bff955ba9e86f397746b4f91a3
 
