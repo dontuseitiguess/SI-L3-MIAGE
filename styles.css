@@ -1,20 +1,32 @@
-/* --- Menu de navigation --- */
+/* ==== FOND GLOBAL ==== */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #b7d8ff, #f7b8d9);
+  font-family: "Poppins", sans-serif;
+  color: #111;
+}
+
+/* ==== NAVBAR GIRLY GLASSMORPHISM ==== */
 .navbar {
-  background-color: #111827;
-  color: white;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 18px 40px;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .logo {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.4em;
   letter-spacing: 1px;
+  color: #1b1f3b;
 }
 
 .menu {
@@ -26,7 +38,7 @@
 }
 
 .menu li a {
-  color: #e5e7eb;
+  color: #1b1f3b;
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 8px;
@@ -34,70 +46,111 @@
 }
 
 .menu li a:hover {
-  background-color: #1f2937;
-  color: white;
+  background: rgba(255, 255, 255, 0.4);
+  color: #111;
 }
 
-/* --- Sections principales --- */
-.rubrique {
-  padding: 60px 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  margin: 40px auto;
-  max-width: 900px;
-}
-
+/* ==== TITRES IDENTIQUES AU SITE MODÈLE ==== */
 .rubrique h2 {
-  color: #111827;
-  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   text-align: center;
+  color: #1d2530;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
 }
 
-/* --- Cartes de schémas (Rubrique 3 et 8) --- */
+/* Soulignement pastel bleu → rose comme Portfolio_SI */
+.rubrique h2::after {
+  content: "";
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(to right, #78a7ff, #ff86b4);
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* ==== SECTIONS GIRLY GLASS ==== */
+.rubrique {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  padding: 60px 40px;
+  margin: 60px auto;
+  max-width: 950px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(255, 150, 200, 0.15);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Animation douce */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== CARTES DE SCHEMAS ==== */
 .schema-card {
-  background-color: #f9fafb;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  margin-bottom: 30px;
-  padding: 20px;
-  text-align: center;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 35px;
+  box-shadow: 0 8px 25px rgba(120, 167, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.schema-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 135, 180, 0.3);
 }
 
 .schema-card h3 {
-  color: #1f2937;
-  margin-bottom: 20px;
+  color: #2c3548;
+  font-weight: 600;
 }
 
+/* Images */
 .schema-image {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid #e5e7eb;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .schema-image:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: scale(1.03);
 }
 
-/* --- Lien PDF --- */
+/* ==== LIENS PDF ==== */
 .pdf-link {
-  color: #2563eb;
+  color: #ff4fa3;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .pdf-link:hover {
   text-decoration: underline;
 }
 
-/* --- Pied de page --- */
+/* ==== FOOTER ==== */
 .footer {
   text-align: center;
   padding: 25px;
-  background-color: #f3f4f6;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #6b7280;
   font-size: 0.9em;
+  margin-top: 80px;
+  backdrop-filter: blur(6px);
 }
